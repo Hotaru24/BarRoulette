@@ -1,11 +1,16 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
+const firebase = require("firebase");
+// Required for side-effects
+require("firebase/firestore");
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Oh my Beer</Text>
-    </View>
+    <SafeAreaView>
+      <View style={styles.container}>
+        <Text>Oh my Beer</Text>
+      </View>
+    </SafeAreaView>
   );
 }
 
