@@ -1,19 +1,19 @@
-import React from 'react';
+import React, { Component, Fragment } from 'react';
+import Map from './components/Map'
 import { StyleSheet, Text, View } from 'react-native';
+import MapView, { PROVIDER_GOOGLE } from 'react-native-maps';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Oh my Beer</Text>
-    </View>
-  );
+
+export default
+class App extends React.Component {
+	render() {
+		return (
+      <Fragment>
+        <Text>Oh my Beer</Text>
+        <Map/>
+   
+      </Fragment>
+			
+		);
+	}
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
