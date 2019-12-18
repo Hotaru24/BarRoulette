@@ -9,7 +9,7 @@ class App extends React.Component {
 	render() {
 		return (
       <Fragment>
-        <Text>Oh my Beer</Text>
+        
         <Map/>
    
       </Fragment>
