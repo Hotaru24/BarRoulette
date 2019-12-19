@@ -20,13 +20,19 @@ const Map = () => {
 				<Container style={styles.navBar}>
 					<Footer>
 						<FooterTab>
-							<Button onPress={() => Alert.alert('Carte')}>
+							<Button onPress={() => Alert.alert('Bar 1')}>
 								<Icon name="map" />
 							</Button>
-							<Button active onPress={() => Alert.alert('Rechercher un bar')}>
+							<Button active onPress={() => Alert.alert('Bar 2')}>
 								<Icon active name="search" />
 							</Button>
-							<Button onPress={() => Alert.alert('Menu')}>
+							<Button onPress={() => Alert.alert('Bar 3')}>
+								<Icon name="apps" />
+							</Button>
+							<Button onPress={() => Alert.alert('Bar 4')}>
+								<Icon name="apps" />
+							</Button>
+							<Button onPress={() => Alert.alert('Bar 5')}>
 								<Icon name="apps" />
 							</Button>
 						</FooterTab>
