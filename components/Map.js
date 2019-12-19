@@ -25,12 +25,13 @@ import { Container, Footer, FooterTab, Button, Icon } from 'native-base';
 								<Button onPress={() => this.props.navigation.navigate('Home')}>
 									<Icon name="map" />
 								</Button>
-								<Button active onPress={() => this.props.navigation.navigate('Details')}>
+								<Button active onPress={() => this.props.navigation.navigate('FindBar')}>
 									<Icon active name="search" />
 								</Button>
-								<Button onPress={() => Alert.alert('Menu')}>
+								<Button onPress={() => this.props.navigation.navigate('Menu')}>
 									<Icon name="apps" />
 								</Button>
+								
 							</FooterTab>
 						</Footer>
 					</Container>
