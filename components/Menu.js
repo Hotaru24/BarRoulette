@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { View,Text } from 'native-base';
+import { View, Text } from 'native-base';
 
 
 class Menu extends React.Component {
