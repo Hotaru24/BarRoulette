@@ -1,10 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import FormUser from './Components/FormUser';
 
-export default function App() {
+const App = () => {
   return (
     <View style={styles.container}>
       <Text>Oh my Beer</Text>
+      <FormUser/>
     </View>
   );
 }
@@ -17,3 +19,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+export default App;
