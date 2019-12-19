@@ -1,11 +1,9 @@
-import React, { Component, Fragment } from 'react';
+import React, { Fragment } from 'react';
 import { Platform, StyleSheet, Text, View, Alert } from 'react-native';
 import MapView, { PROVIDER_GOOGLE } from 'react-native-maps';
 import { Container, Header, Content, Footer, FooterTab, Button, Icon } from 'native-base';
 
-export default
-class Map extends React.Component {
-	render() {
+const Map = () => {
 		return (
 			<Fragment>
 				<MapView
@@ -37,7 +35,6 @@ class Map extends React.Component {
 
 			</Fragment>
 		);
-	}
 }
 
 const styles = StyleSheet.create({
@@ -48,3 +45,5 @@ const styles = StyleSheet.create({
 		height: '92%',
 	}
 });
+
+export default Map;
