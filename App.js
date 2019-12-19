@@ -1,23 +1,20 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import Map from './components/Map';
+// import FindBar from './components/FindBar';
 import { StyleSheet, Text, View } from 'react-native';
-import FormUser from './Components/FormUser';
+import MapView, { PROVIDER_GOOGLE } from 'react-native-maps';
+// import FormUser from './components/FormUser';
+
+
 
 const App = () => {
-  return (
-    <View style={styles.container}>
-      <Text>Oh my Beer</Text>
-      <FormUser/>
-    </View>
-  );
+	return (
+    <Fragment>
+      {/* <FormUser/> */}
+      <Map/>
+      {/* <FindBar /> */}
+    </Fragment>
+	);
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
 
 export default App;
