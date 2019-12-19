@@ -1,7 +1,9 @@
 import React, { Fragment } from 'react';
 import { Container, Header, Content, Form, Item, Input, Label, Picker } from 'native-base';
 
-const FindBar = () => {
+
+class FindBar extends React.Component {
+  render() {
 		return (
       <Container>
         <Header />
@@ -18,7 +20,7 @@ const FindBar = () => {
           </Form>
         </Content>
       </Container>
-    );
+    );}
 }
 
 export default FindBar;
