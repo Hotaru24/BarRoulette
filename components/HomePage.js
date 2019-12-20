@@ -15,7 +15,7 @@ class HomePage extends React.Component {
       </Text>
       <View style={{ flex: 1, justifyContent: "space-around", alignItems: "center", marginTop: 10, borderRadius: 10 }}>
       <Button large block light style={{ borderRadius: 10, backgroundColor: "#3054a6" }} onPress={() => this.props.navigation.navigate('Map')}>
-        <Text style={{ fontSize: 30}}> ÉÉZÉPARTIII ! </Text>
+        <Text style={{ fontSize: 30, color: "#FFFFFF"}}> ÉÉZÉPARTIII ! </Text>
       </Button>
       </View>
     </View>

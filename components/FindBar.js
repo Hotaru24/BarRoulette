@@ -21,7 +21,7 @@ class FindBar extends React.Component {
           </Form>
           <View style={{ flex: 1, justifyContent: "space-around", alignItems: "center", marginTop: 30 }}>
               <Button onPress={() => this.props.navigation.navigate('ListBar')} style={{ width: 60, borderRadius: 10, justifyContent: "center" }} >
-                <Text>Chercher</Text>
+                <Text style={{ color: "#FFFFFF" }}>Chercher</Text>
               </Button>
           </View>
         </Content>
