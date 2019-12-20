@@ -25,13 +25,13 @@ class AddBar extends React.Component {
 	}
   
   submitForm = () => {
-    axios.post('http://192.168.184.19:8000/bar', {
+    axios.post('http://192.168.184.24:8000/bar', {
       name: this.state.form.name,
       hours: this.state.form.hours,
       adress: this.state.form.adress,
-      style: this.state.form.style,
+      style: this.state.form.style
     }).then((result) => {
-      console.log(result);
+        console.log(result);
     });
   };
 
@@ -43,28 +43,28 @@ class AddBar extends React.Component {
           <Form>
             <Item floatingLabel>
               <Label>Nom du bar </Label>
-              <Input onChange={(event) => this.setState({ ...form, name: event.target.value})}/>
+              <Input onChange={(event) => this.setState({form: { ...this.state.form, name: event.target.value}})} />
             </Item>
             <Item floatingLabel >
               <Label>Horaires</Label>
-              <Input onChange={(event) => this.setState({ ...form, hours: event.target.value})}/>
+              <Input onChange={(event) => this.setState({form: { ...this.state.form, hours: event.target.value}})} />
             </Item>
 						<Item floatingLabel last>
               <Label>Adresse</Label>
-              <Input onChange={(event) => this.setState({ ...form, adress: event.target.value})}/>
+              <Input onChange={(event) => this.setState({form: { ...this.state.form, adress: event.target.value}})} />
             </Item>
 						<Item picker>
               <Picker
                 mode="dropdown"
                 iosIcon={<Icon name="arrow-down" />}
                 style={{ width: undefined }}
-                placeholder="Select your SIM"
+                placeholder="Style"
                 placeholderStyle={{ color: "#bfc6ea" }}
                 placeholderIconColor="#007aff"
                 selectedValue={this.state.selected2}
                 onValueChange={this.onValueChange2.bind(this)}
-                onChange={(event) => this.setState({ ...form, style: event.target.value})}
-              >
+                onChange={(event) => this.setState({form: { ...this.state.form, style: event.target.value}})}
+                >
                 <Picker.Item label="Pub" value="key0" />
                 <Picker.Item label="Bar à bieres" value="key1" />
                 <Picker.Item label="Bar à vins" value="key2" />

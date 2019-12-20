@@ -1,4 +1,4 @@
-import React, { Fragment } from './node_modules/react';
+import React, { Fragment } from 'react';
 import { Platform, StyleSheet, Text, View, Alert } from 'react-native';
 import MapView, { PROVIDER_GOOGLE } from 'react-native-maps';
 import { Container, Footer, FooterTab, Button, Icon } from 'native-base';

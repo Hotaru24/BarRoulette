@@ -4,8 +4,6 @@ import FindBar from './components/FindBar';
 import AddBar from './components/AddBar';
 import Menu from './components/Menu';
 import HomePage from './components/HomePage';
-import { StyleSheet, Text, View } from 'react-native';
-import MapView, { PROVIDER_GOOGLE } from 'react-native-maps';
 import {createAppContainer} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
 
