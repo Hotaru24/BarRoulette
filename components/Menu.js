@@ -12,7 +12,7 @@ class Menu extends React.Component {
 			<Header />
 			<Content>
 				<List>
-					<ListItem style={{ marginTop:  20 }}>
+					<ListItem style={{ marginTop:  20 }} onPress={() => this.props.navigation.navigate('HomePage')}>
 						<Left>
 							<Text>Concept</Text>
 						</Left>
