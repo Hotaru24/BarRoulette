@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import { Container, Content, Form, Item, Picker, Label, Input, Icon, Button } from 'native-base';
 import { Text } from 'react-native';
+import axios from 'axios';
 
 class AddBar extends React.Component {
 	
@@ -8,10 +9,13 @@ class AddBar extends React.Component {
     super(props);
     this.state = {
       selected2: undefined,
-      name: '',
-      hours: '',
-      adress: '',
-      style: '',
+      form: {
+        name: '',
+        hours: '',
+        adress: '',
+        style: ''
+      }
+
     };
   }
   onValueChange2(value: string) {
