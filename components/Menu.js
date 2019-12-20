@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { Text, View } from 'react-native';
+import { Text, Alert, Linking } from 'react-native';
 import { Container, Header, Content, List, ListItem, Left, Right, Icon } from 'native-base';
 
 
@@ -28,7 +28,7 @@ class Menu extends React.Component {
 							<Icon name="arrow-forward" />
 						</Right>
 					</ListItem>
-					<ListItem style={{ marginTop:  20 }}>
+					<ListItem style={{ marginTop:  20 }} onPress={() => Linking.openURL('https://www.facebook.com/BarRoulette-Nantes-107446210760658/')}>
 						<Left>
 							<Text> <Icon active name="logo-facebook" />  On se retrouve sur facebook ?</Text>
 						</Left>
@@ -36,7 +36,7 @@ class Menu extends React.Component {
 							<Icon name="arrow-forward" />
 						</Right>
 					</ListItem>
-					<ListItem style={{ marginTop:  20 }}>
+					<ListItem style={{ marginTop:  20 }} onPress={() => Alert.alert('Une autre fois, je suis occupé')}>
 						<Left>
 							<Text>Envoyez nous un message</Text>
 						</Left>
