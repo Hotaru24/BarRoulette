@@ -1,11 +1,12 @@
 import React, { Fragment } from 'react';
-import { Container, Header, Content, Form, Item, Input, Label, Picker } from 'native-base';
+import { Text, View } from 'react-native';
+import { Container, Header, Content, Form, Item, Input, Label, Button } from 'native-base';
 
 
 class FindBar extends React.Component {
   render() {
 		return (
-      <Container>
+      <Container >
         <Header />
         <Content>
           <Form>
@@ -18,6 +19,11 @@ class FindBar extends React.Component {
               <Input />
             </Item>
           </Form>
+          <View style={{ flex: 1, justifyContent: "space-around", alignItems: "center", marginTop: 30 }}>
+              <Button onPress={() => this.props.navigation.navigate('ListBar')} style={{ width: 60, borderRadius: 10, justifyContent: "center" }} >
+                <Text style={{ color: "#FFFFFF" }}>Chercher</Text>
+              </Button>
+          </View>
         </Content>
       </Container>
     );}
