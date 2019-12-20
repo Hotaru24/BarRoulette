@@ -31,6 +31,7 @@ import { Container, Footer, FooterTab, Button, Icon } from 'native-base';
 								<Button onPress={() => this.props.navigation.navigate('Menu')}>
 									<Icon name="apps" />
 								</Button>
+
 								
 							</FooterTab>
 						</Footer>

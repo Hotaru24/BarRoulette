@@ -45,7 +45,7 @@ class AddBar extends React.Component {
 		return (
       <Container>
         <Content >
-          <View style={{ alignItems: "center", marginTop: 10 }}>
+          <View style={{ alignItems: "center", marginTop: 10, backgroundColor: '#76E0DB' }}>
             <Text style={{ fontSize: 20, alignContent: "center" }}>Ajouter un Bar</Text>
           </View>
 
