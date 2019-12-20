@@ -5,7 +5,7 @@ import { Container, Header, Content, Form, Item, Input, Label, Picker } from 'na
 class FindBar extends React.Component {
   render() {
 		return (
-      <Container>
+      <Container style={{ backgroundColor: '#76E0DB' }} >
         <Header />
         <Content>
           <Form>

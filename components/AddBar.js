@@ -37,7 +37,7 @@ class AddBar extends React.Component {
 
   render() {
 		return (
-      <Container>
+      <Container style={{ backgroundColor: '#76E0DB' }}>
         <Content>
           <Text>Trouver un Bar</Text>
           <Form>

@@ -5,16 +5,16 @@ import { Button } from 'native-base';
 class HomePage extends React.Component {
   render() {
   return(
-    <View style={{ flex: 1, justifyContent: "space-around", alignItems: "center" }}>
+    <View style={{ flex: 1, justifyContent: "space-around", alignItems: "center", backgroundColor: '#76E0DB' }}>
       <Image style={{ width: 200, height: 200,  }} source={require('../assets/logo-projet3.png')} />
-      <Text style={{ width: '90%'}}>
+      <Text style={{ width: '90%', textAlign: 'center', fontSize: 20}}>
         Laissez nous organiser votre soirée, en vous dégottant les meilleurs bars selon vos critères. 
         Nous choisissons parmis notre sélection personnelle de bars pas piqué des hannetons. Tout ces 
         bons plans de derrière les fagots vous promettent (façon de parler pas de poursuites svp) des 
         soirées de folies ! :)
       </Text>
-      <Button bordered success style={{ marginTop: 30 }} onPress={() => this.props.navigation.navigate('Map')}>
-        <Text> ÉÉZÉPARTIII </Text>
+      <Button large block light style={{ marginTop: 30 }} onPress={() => this.props.navigation.navigate('Map')}>
+        <Text style={{ fontSize: 30}}> ÉÉZÉPARTIII ! </Text>
       </Button>
     </View>
   )}
