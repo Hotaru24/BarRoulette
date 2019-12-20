@@ -9,10 +9,9 @@ class Menu extends React.Component {
 
 	return (
 		<Container>
-			<Header />
 			<Content>
 				<List>
-					<ListItem style={{ marginTop:  20 }} onPress={() => this.props.navigation.navigate('HomePage')}>
+					<ListItem style={{ marginTop:  50 }} onPress={() => this.props.navigation.navigate('HomePage')}>
 						<Left>
 							<Text>Concept</Text>
 						</Left>
@@ -20,7 +19,7 @@ class Menu extends React.Component {
 							<Icon name="arrow-forward" />
 						</Right>
 					</ListItem>
-					<ListItem style={{ marginTop:  20 }} onPress={() => this.props.navigation.navigate('AddBar')}>
+					<ListItem style={{ marginTop:  30 }} onPress={() => this.props.navigation.navigate('AddBar')}>
 					<Left>
 						<Text >Ajouter un bar</Text>
 					</Left>
@@ -28,7 +27,7 @@ class Menu extends React.Component {
 							<Icon name="arrow-forward" />
 						</Right>
 					</ListItem>
-					<ListItem style={{ marginTop:  20 }} onPress={() => Linking.openURL('https://www.facebook.com/BarRoulette-Nantes-107446210760658/')}>
+					<ListItem style={{ marginTop:  30 }} onPress={() => Linking.openURL('https://www.facebook.com/BarRoulette-Nantes-107446210760658/')}>
 						<Left>
 							<Text> <Icon active name="logo-facebook" />  On se retrouve sur facebook ?</Text>
 						</Left>
@@ -36,7 +35,7 @@ class Menu extends React.Component {
 							<Icon name="arrow-forward" />
 						</Right>
 					</ListItem>
-					<ListItem style={{ marginTop:  20 }} onPress={() => Alert.alert('Une autre fois, je suis occupé')}>
+					<ListItem style={{ marginTop:  30 }} onPress={() => Alert.alert('Une autre fois, je suis occupé')}>
 						<Left>
 							<Text>Envoyez nous un message</Text>
 						</Left>
