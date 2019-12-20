@@ -22,7 +22,7 @@ import { Container, Footer, FooterTab, Button, Icon } from 'native-base';
 					<Container style={styles.navBar}>
 						<Footer>
 							<FooterTab>
-								<Button onPress={() => this.props.navigation.navigate('Home')}>
+								<Button block onPress={() => this.props.navigation.navigate('Home')}>
 									<Icon name="map" />
 								</Button>
 								<Button active onPress={() => this.props.navigation.navigate('FindBar')}>

@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
-import { View, Text } from 'native-base';
+import { Text, View } from 'react-native';
+import { Button } from 'native-base';
 
 
 class Menu extends React.Component {
@@ -7,7 +8,9 @@ class Menu extends React.Component {
 		return (
 			<View>
 				<Text>Concept</Text>
-				<Text onPress={() => this.props.navigation.navigate('AddBar')}>Ajouter un bar</Text>
+				<Button bordered success onPress={() => this.props.navigation.navigate('AddBar')}>
+					<Text >Ajouter un bar</Text>
+				</Button>
 				<Text>On se retrouve sur facebook ?</Text>
 				<Text>Envoyez nous un message</Text>
 			</View>
